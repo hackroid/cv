@@ -12,6 +12,8 @@ Hackroid's latest version resume made with XeLaTeX. It uses [**zachscrivena/simp
 
 ## Usage
 
+**VSCode plugin is highly recommended**, otherwise:
+
 The main XeLaTeX source file is `CV.tex`; the compiled document is `CV.pdf`.
 
 Instructions for compiling the document (TeX &rarr;(XeLaTeX)&rarr; PDF):

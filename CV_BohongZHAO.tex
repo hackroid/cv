@@ -1,0 +1,380 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[a4paper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Bohong ZHAO}
+\newcommand{\CVTitle}{Bohong ZHAO's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{https://github.com/hackroid/blob/main/CV_BohongZHAO.pdf}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://sustech.edu.cn/}
+{Undergraduate | Southern University of Science and Technology}
+\par
+\href{mailto:ooozbh@gmail.com}
+{ooozbh@gmail.com}
+\,\SubBulletSymbol\,
++1\,(917)\,524-6777
+\,\SubBulletSymbol\,
+\href{https://github.com/hackroid/}{github.com/hackroid}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{https://www.ubc.ca/}
+{\textbf{The University of British Columbia (UBC)}},
+Vancouver, BC, Canada
+\hfill
+\DatestampYMD{2018}{07}{15} --
+\DatestampYMD{2018}{08}{15}
+
+%\Gap
+\BulletItem
+Summer Program: Algorithm \& Webapp Courses
+
+%\BigGap
+\Gap
+\Entry
+\href{https://www.sustech.edu.cn/}
+{\textbf{Southern University of Science and Technology (SUSTech)}},
+Shenzhen, Guangdong, China
+
+\Gap
+\BulletItem
+B.Eng. in
+\href{http://cse.sustech.edu.cn/}
+{Computer Science and Engineering}
+\hfill
+\DatestampYMD{2016}{09}{01} --
+\DatestampYMD{2021}{07}{01}
+\begin{Detail}
+\SubBulletItem
+Relavent courses:
+Data Structures and Algorithms Analysis,
+Discrete Mathematics,
+Digital Logic,
+Computer System Design and Application,
+Computer Organization Principle,
+Database Principle,
+Probability and Statistics,
+Artificial Intelligence,
+Computer Networks,
+Embedded System and Microcomputer Principle,
+Object-oriented Analysis and Design,
+Software Engineering,
+C/C++ Programming Design,
+Computer Vision,
+Introduction to Cognitive Science,
+Operating System,
+Robotics,
+Introduction to Big Data Analysis
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href{https://github.com/hackroid/pMOEA-D}
+{\textbf{Parallel Implementation of MOEA/D and its Application to Feature Selection}}
+
+%\Gap
+\BulletItem
+Undergraduate Research Project, SUSTech
+\hfill
+\DatestampYMD{2018}{09}{01} --
+\DatestampYMD{2019}{06}{01}
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+\href{http://cse.sustech.edu.cn/faculty/~hisao/}{Prof.~Hisao~Ishibuchi}
+\SubBulletItem
+Focus:
+Evolutionary algorithms, multiobjective optimization, combinatorial optimization, feature selection.
+\SubBulletItem
+Languages: Python, MATLAB
+\SubBulletItem
+Summary:
+The evolutionary algorithm has progressive effect recent years when working on feature selection which is the most important part of machine learning and data mining. This project aims to create a parallel environment for MOEA/D algorithm, using the island model and find out an effective way in which partial data would be used for communication. We use feature selection to verify our proposal in the whole process.
+\end{Detail}
+
+\Gap
+\Entry
+\href{https://github.com/hackroid/cv-xmp}
+{\textbf{Medical Image Processing using Deep Learning}}
+
+%\Gap
+\BulletItem
+Summer Research Project, SUSTech
+\hfill
+\DatestampYMD{2019}{06}{01} --
+\DatestampYMD{2019}{09}{01}
+\begin{Detail}
+\SubBulletItem
+Supervisor:
+\href{https://faculty.sustech.edu.cn/fengzheng/en/}{Prof.~Feng~ZHENG}
+\SubBulletItem
+Focus:
+Medical imaging, deep learning, neural networks.
+\SubBulletItem
+Languages \& Framework: Python, PyTorch
+\SubBulletItem
+Summary:
+An elementary deeplearning research, applying to medical image detection and segmentation.
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Scholarships}
+{Awards \& Scholarships}
+{PDF:AwardsAndScholarships}
+
+\BulletItem
+Best Student Assistant,
+Shuren College,
+SUSTech
+\hfill
+\DatestampYMD{2016}{09}{01} --
+\DatestampYMD{2018}{06}{01}
+\begin{Detail}
+\Item
+Awarded to the outstanding student assistants for helping tutors and students with college affairs.
+\end{Detail}
+
+\Gap
+\BulletItem
+Undergraduate Scholarship,
+SUSTech
+\hfill
+\DatestampYMD{2016}{09}{01}
+\begin{Detail}
+\Item
+Awarded to the top students at the beginning of the undergraduate.
+\end{Detail}
+
+
+% Manual page break.
+%newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Campus Activities}
+{Campus Activities}
+{PDF:CampusActivities}
+
+\Entry
+\href{https://www.sustech.edu.cn/en/campus-life.html?lang=en}
+{\textbf{Student Congress}},
+SUSTech
+
+\Gap
+\BulletItem
+Representative
+\hfill
+\DatestampYMD{2016}{09}{01} --
+\DatestampYMD{2020}{07}{01}
+\begin{Detail}
+\SubBulletItem
+Participate in making important decisions about student affairs.
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work\newline
+Experience}
+{Work Experience}
+{PDF:WorkExperience}
+
+\Entry
+\href{https://tech.pingan.com/}
+{\textbf{Ping An Technology}},
+Shenzhen, Guangdong, China
+
+\Gap
+\BulletItem
+Back-end Developer (Intern),
+Knowledge Graph Dev Team
+\hfill
+\DatestampYMD{2020}{06}{15} --
+\DatestampYMD{2020}{11}{06}
+\begin{Detail}
+\SubBulletItem
+Django back-end development.
+\SubBulletItem
+Stock data engineering based on abstract calculation syntax tree.
+\end{Detail}
+
+\Entry
+\href{https://www.doodod.com/}
+{\textbf{DOODO (Beijing) Ltd}},
+Shenzhen, Guangdong, China
+
+\Gap
+\BulletItem
+Part Time Assistant (Intern)
+\hfill
+\DatestampYMD{2017}{08}{01}
+\begin{Detail}
+\SubBulletItem
+Help to create classification of user portrait system.
+\end{Detail}
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Chinese: Native language.
+
+\Gap
+\BulletItem
+English: Fluent.
+\SubBulletItem
+[\DatestampYMD{2020}{12}{06}]
+TOEFL: 84
+\SubBulletItem
+[\DatestampYMD{2019}{06}{01}]
+College English Test  (CET6): 527
+
+\Gap
+\BulletItem
+Japanese: Basic.
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+\BulletItem
+{\color{black} $\varheart$} Python,
+C/C++,
+Java,
+SQL,
+Shell,
+{\LaTeX},
+MATLAB,
+CSS\&HTML,
+PHP,
+JavaSciprt
+\BulletItem
+Adobe Photoshop,
+Procreate (iPad)
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Digital photography,
+snowboarding,
+swimming.
+
+
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\BigGap
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}
