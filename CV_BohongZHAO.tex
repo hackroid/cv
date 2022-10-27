@@ -24,7 +24,7 @@
 % CV Info (to be customized).
 \newcommand{\CVAuthor}{Bohong ZHAO}
 \newcommand{\CVTitle}{Bohong ZHAO's CV}
-\newcommand{\CVNote}{CV compiled on {\today}, check it on \href{https://github.com/hackroid/cv}{github.com/hackroid/cv}}
+\newcommand{\CVNote}{CV compiled on {\today}, check it on \href{https://github.com/hackroid/cv}{github.com/hackroid/cv}, branch: job}
 \newcommand{\CVWebpage}{https://github.com/hackroid/blob/main/CV_BohongZHAO.pdf}
 
 % PDF settings and properties.
@@ -72,6 +72,8 @@ breaklinks}
     \href{https://github.com/hackroid/}{github.com/hackroid}
     \,\SubBulletSymbol\,
     \href{https://www.linkedin.com/in/%E5%8D%9A%E5%BC%98-%E8%B5%B5-b7ab09136/}{LinkedIn}
+    \,\SubBulletSymbol\,
+    \href{https://hackroid.com}{blog}
 \end{SubTitle}
 
 \begin{Body}
@@ -99,9 +101,7 @@ breaklinks}
     \DatestampYMD{2024}{04}{01} (expected)
     \begin{Detail}
         \SubBulletItem
-        Under Supervision of \href{http://icb-lab.naist.jp/members/yoshi/index.html}{Prof. Yoshinobu Sato}, \href{http://icb-lab.naist.jp/index.html}{Imaging-based Computational Biomedicine Lab}
-        \SubBulletItem
-        Research theme: 2D/3D Registration, Deep Learning
+        Supervisor: \href{http://icb-lab.naist.jp/members/yoshi/index.html}{Prof. Yoshinobu Sato}, \href{http://icb-lab.naist.jp/index.html}{Imaging-based Computational Biomedicine Lab}
     \end{Detail}
 
     \Gap
@@ -115,7 +115,7 @@ breaklinks}
     \DatestampYMD{2018}{08}{15}
     %\Gap
     \BulletItem
-    Summer Program: Algorithm \& Webapp Courses
+    Summer Program: Algorithms \& Webapp Courses
 
     %\BigGap
     \Gap
@@ -167,43 +167,30 @@ breaklinks}
     % \Gap
     \Entry
     \textbf{2D/3D Registration using Deep Learning}
-
     %\Gap
     \BulletItem
-    Master Research Theme, NAIST
+    Master Research Theme, NAIST, Supervisor: \href{http://icb-lab.naist.jp/members/yoshi/index.html}{Prof. Yoshinobu Sato}
     \hfill
     \DatestampYMD{2022}{04}{01} -- Present
     % \DatestampYMD{2019}{09}{01}
     \begin{Detail}
         \SubBulletItem
-        Supervisor:
-        \href{http://icb-lab.naist.jp/members/yoshi/index.html}{Prof. Yoshinobu Sato}
-        \SubBulletItem
-        Focus:
-        2D/3D registration, medical imaging, deep learning, neural networks.
-        \SubBulletItem
         Languages \& Framework: Python, PyTorch, MATLAB
         \SubBulletItem
         Summary:
-        Implementing deep learning methods to 2D/3D registration of pre-op and intra-op data overcomes the difficulties that the conventional methods cannot handle. Explicit formalization of complicated mapping is no longer necessary, but with a better performance.
+        Implementing deep learning methods to 2D/3D registration.
     \end{Detail}
 
     \Entry
     \href{https://github.com/hackroid/cv-xmp}
-    {\textbf{Medical Image Processing using Deep Learning}}
+    {\textbf{Medical Image Processing using Deep Learning} [link to GitHub]}
     %\Gap
     \BulletItem
-    Summer Research Project, SUSTech
+    Summer Research Project, SUSTech, Supervisor: \href{https://faculty.sustech.edu.cn/fengzheng/en/}{Prof.~Feng~Zheng}
     \hfill
     \DatestampYMD{2019}{06}{01} --
     \DatestampYMD{2019}{09}{01}
     \begin{Detail}
-        \SubBulletItem
-        Supervisor:
-        \href{https://faculty.sustech.edu.cn/fengzheng/en/}{Prof.~Feng~Zheng}
-        \SubBulletItem
-        Focus:
-        Medical imaging, deep learning, neural networks.
         \SubBulletItem
         Languages \& Framework: Python, PyTorch
         \SubBulletItem
@@ -213,26 +200,19 @@ breaklinks}
 
     \Entry
     \href{https://github.com/hackroid/pMOEA-D}
-    {\textbf{Parallel Implementation of MOEA/D and its Application to Feature Selection}}
-
-    \Gap
+    {\textbf{Parallel Implementation of MOEA/D and its Application to Feature Selection} [link to GitHub]}
+    % \Gap
     \BulletItem
-    Undergraduate Research Course Project, SUSTech
+    Undergraduate Project, SUSTech, Supervisor: \href{http://cse.sustech.edu.cn/faculty/~hisao/}{Prof.~Hisao~Ishibuchi}
     \hfill
     \DatestampYMD{2018}{09}{01} --
     \DatestampYMD{2019}{06}{01}
     \begin{Detail}
         \SubBulletItem
-        Supervisor:
-        \href{http://cse.sustech.edu.cn/faculty/~hisao/}{Prof.~Hisao~Ishibuchi}
-        \SubBulletItem
-        Focus:
-        Evolutionary algorithms, multiobjective optimization, combinatorial optimization, feature selection.
-        \SubBulletItem
         Languages: Python, MATLAB
         \SubBulletItem
         Summary:
-        The evolutionary algorithm has progressive effect recent years when working on feature selection which is the most important part of machine learning and data mining. This project aims to create a parallel environment for MOEA/D algorithm, using the island model and find out an effective way in which partial data would be used for communication. We use feature selection to verify our proposal in the whole process.
+        This project aims to parallelize MOEA/D by using the island model and find out an effective way in which partial data would be used for communication. Several feature selection cases are used for verification.
     \end{Detail}
 
 
@@ -251,7 +231,7 @@ breaklinks}
     {\textbf{Ping An Technology}},
     Shenzhen, Guangdong, China
 
-    \Gap
+    % \Gap
     \BulletItem
     Development Intern,
     Knowledge Graph Dev Team
@@ -260,44 +240,129 @@ breaklinks}
     \DatestampYMD{2020}{11}{06}
     \begin{Detail}
         \SubBulletItem
-        Django back-end development.
-        \SubBulletItem
-        Stock data engineering based on abstract calculation syntax tree.
+        Django back-end development: our team collaborates to run a stock recommendation system. I am responsible for designing and maintaining the back-end API to provide specific forms of information based on team members' requirements. The team's requirements are often extremely complex and require basic stock data engineering knowledge to understand, but meanwhile, it's highly modular. I designed an abstract calculation syntax tree to handle the information that team members have preliminarily processed.
     \end{Detail}
+
+
+    %%%%%%%%%%%%%%%%%%%%%%
+    %%  COURSE PROJECTS %%
+    %%%%%%%%%%%%%%%%%%%%%%
+
+    \Section
+    {Course \newline
+        Projects}
+    {Course Projects}
+    {PDF:CourseProjects}
+
+    \BulletItem
+    \href{https://github.com/hackroid/snappat}{\textbf{Snappat -- A social network app based on puzzles} [link to Github]}
+    \hfill
+    \DatestampYMD{2019}{02}{01} --
+    \DatestampYMD{2019}{06}{01}
+    \begin{Detail}
+        \SubBulletItem
+        This project aims to develop a social networking app covering several features like social function, machine learning, object recognition, and puzzle solving.
+        \SubBulletItem
+        In charge for: entire app UML design, homepage/fragment card development, code version management.
+    \end{Detail}
+
+    \Gap
+
+    \BulletItem
+    \href{https://github.com/hackroid/MqttSensorDemo}{\textbf{Sensor Data Real Time Transmission Application} [link to GitHub]}
+    \hfill
+    \DatestampYMD{2018}{09}{01} --
+    \DatestampYMD{2019}{01}{01}
+    \begin{Detail}
+        \SubBulletItem
+        Building an Android app to send the sensor's data between multi-device using MQTT protocol.
+        \SubBulletItem
+        In charge for: entire android app development and MQTT server maintenance.
+    \end{Detail}
+
+    \Gap
+
+    \BulletItem
+    \href{https://github.com/zhaoweizhong/Faculty-Reservation}{\textbf{Faculty Reservation System} [link to GitHub]}
+    \hfill
+    \DatestampYMD{2018}{09}{01} --
+    \DatestampYMD{2019}{01}{01}
+    \begin{Detail}
+        \SubBulletItem
+        This project is to develop a system for helping SUSTech students and faculty schedule their meetings. The system covers several important features, such as user registration, user information, and appointment scheduling.
+        \SubBulletItem
+        In charge for: PHP back-end spider development for grabbing data from researchgate.
+    \end{Detail}
+
+    \Gap
+
+    \BulletItem
+    \href{https://github.com/hackroid/Mr.Earthquake}{\textbf{Earthquake Visualization Software} [link to GitHub]}
+    \hfill
+    \DatestampYMD{2017}{02}{01} --
+    \DatestampYMD{2017}{06}{01}
+    \begin{Detail}
+        \SubBulletItem Developing a software which performed visualized and statistical seismal data using Java GUI.
+        \SubBulletItem In charge for: Java back-end spider for grabbing seismal data from web.
+    \end{Detail}
+
+    \Gap
+
+    \BulletItem
+    \textbf{Flight Reservation System}
+    \hfill
+    \DatestampYMD{2016}{09}{01} --
+    \DatestampYMD{2017}{01}{01}
+    \begin{Detail}
+        \SubBulletItem Developing an online flight reservation system by JSP and JavaBean including functions like user registration, flight querying, flight reservation, flight management.
+        \SubBulletItem In charge for: full-stack development including JSP web pages, material designed frontend, MySQL databases.
+    \end{Detail}
+
+    \Gap
+
+    \BulletItem
+    \textbf{Remarks}
+    \begin{Detail}
+        \Item
+        All 5 projects above are course projects (in SUSTech) of: software engineering, computer network, object-oriented analysis and design, advanced java programming, java programming, respectively.
+    \end{Detail}
+
+    % Manual page break.
+    %newpage
 
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%
     %% AWARDS & SCHOLARSHIPS %%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    \Section
-    {Awards \&\newline
-        Scholarships}
-    {Awards \& Scholarships}
-    {PDF:AwardsAndScholarships}
+    % \Section
+    % {Awards \&\newline
+    %     Scholarships}
+    % {Awards \& Scholarships}
+    % {PDF:AwardsAndScholarships}
 
-    \BulletItem
-    \textbf{Best Student Assistant},
-    Shuren College,
-    SUSTech
-    \hfill
-    \DatestampYMD{2016}{09}{01} --
-    \DatestampYMD{2018}{06}{01}
-    \begin{Detail}
-        \Item
-        Awarded to the outstanding student assistants for helping tutors and students with college affairs.
-    \end{Detail}
+    % \BulletItem
+    % \textbf{Best Student Assistant},
+    % Shuren College,
+    % SUSTech
+    % \hfill
+    % \DatestampYMD{2016}{09}{01} --
+    % \DatestampYMD{2018}{06}{01}
+    % \begin{Detail}
+    %     \Item
+    %     Awarded to the outstanding student assistants for helping tutors and students with college affairs.
+    % \end{Detail}
 
-    \Gap
-    \BulletItem
-    \textbf{Undergraduate Scholarship},
-    SUSTech
-    \hfill
-    \DatestampYMD{2016}{09}{01}
-    \begin{Detail}
-        \Item
-        Awarded to the top students at the beginning of the undergraduate.
-    \end{Detail}
+    % \Gap
+    % \BulletItem
+    % \textbf{Undergraduate Scholarship},
+    % SUSTech
+    % \hfill
+    % \DatestampYMD{2016}{09}{01}
+    % \begin{Detail}
+    %     \Item
+    %     Awarded to the top students at the beginning of the undergraduate.
+    % \end{Detail}
 
     % Manual page break.
     %newpage
@@ -306,26 +371,26 @@ breaklinks}
     %% CAMPUS ACTIVITIES %%
     %%%%%%%%%%%%%%%%%%%%%%%
 
-    \Section
-    {Campus Activities}
-    {Campus Activities}
-    {PDF:CampusActivities}
+    % \Section
+    % {Campus Activities}
+    % {Campus Activities}
+    % {PDF:CampusActivities}
 
-    \Entry
-    \href{https://www.sustech.edu.cn/en/campus-life.html?lang=en}
-    {\textbf{Student Congress}},
-    SUSTech
+    % \Entry
+    % \href{https://www.sustech.edu.cn/en/campus-life.html?lang=en}
+    % {\textbf{Student Congress}},
+    % SUSTech
 
-    \Gap
-    \BulletItem
-    Representative
-    \hfill
-    \DatestampYMD{2016}{09}{01} --
-    \DatestampYMD{2020}{07}{01}
-    \begin{Detail}
-        \SubBulletItem
-        Participate in making important decisions about student affairs.
-    \end{Detail}
+    % \Gap
+    % \BulletItem
+    % Representative
+    % \hfill
+    % \DatestampYMD{2016}{09}{01} --
+    % \DatestampYMD{2020}{07}{01}
+    % \begin{Detail}
+    %     \SubBulletItem
+    %     Participate in making important decisions about student affairs.
+    % \end{Detail}
 
 
     %%%%%%%%%%%%
@@ -345,7 +410,7 @@ breaklinks}
     Java,
     SQL,
     Shell,
-    {\LaTeX},
+    {\LaTeX}
     % \BulletItem
     % Adobe Photoshop,
     % Adobe Premiere Pro,
@@ -361,11 +426,10 @@ breaklinks}
     {PDF:Languages}
 
     \BulletItem
-    Chinese: Native
+    Chinese: Native \,\BulletSymbol\, English: Business(TOEFL 84) \,\BulletSymbol\, Japanese: Basic
 
-    \Gap
-    \BulletItem
-    English: Fluent
+    % \Gap
+
     % \SubBulletItem
     % [\DatestampYMD{2020}{12}{06}]
     % TOEFL: 84
@@ -373,9 +437,7 @@ breaklinks}
     % [\DatestampYMD{2019}{06}{01}]
     % College English Test  (CET6): 527
 
-    \Gap
-    \BulletItem
-    Japanese: Basic.
+    % \Gap
 
 
     %%%%%%%%%%%%%%%
@@ -393,14 +455,13 @@ breaklinks}
     % swimming.
 
 
-
 \end{Body}
 
 %%%%%%%%%%%
 % CV NOTE %
 %%%%%%%%%%%
 
-\BigGap
+% \BigGap
 \UseNoteFont%
 \null\hfill%
 [\textit{\CVNote}]
